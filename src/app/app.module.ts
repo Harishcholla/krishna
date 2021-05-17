@@ -3,12 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FirstpageComponent } from './firstpage/firstpage.component';
+import { MaterialModule } from './material/material.module';
+import { SecondpageComponent } from './secondpage/secondpage.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstpageComponent,
+    SecondpageComponent
   ],
   imports: [
     BrowserModule,

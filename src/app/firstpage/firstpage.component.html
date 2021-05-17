@@ -1,0 +1,33 @@
+
+<div class="topGap"></div>
+<div class="" fxLayout="row" fxLayout.xs="column" fxLayoutwrap>
+  <div fxFlex="20">
+    <!-- for stepper -->
+  </div>
+  <div fxFlex="80">
+    <h4 class="head1">Industry</h4>
+    <h3 class="head2 mt-4">What does your business do?</h3>
+    <div class="">
+      <form class="example-form"> <!--height-450-->
+        <mat-form-field class="example-full-width">
+          <input type="text"
+                 matInput
+                 [formControl]="myControl"
+                 [matAutocomplete]="auto"
+                 class="searchInput"
+                 >
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <img src="assets/Image.png" class="img2 ml-4" alt="">
+      </form>
+      <p class="showmore mb-0">Show More</p>
+    </div>
+    <div class="col-md-7  top-50 text-center buttonNext">
+       <button class=" btn btn-md" routerLink='/second-page'>Next</button>
+    </div>
+  </div>
+</div>
