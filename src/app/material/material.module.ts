@@ -31,9 +31,17 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const materialList = [
-  MatCheckboxModule,
+
+]
+
+@NgModule({
+  declarations: [],
+  imports: [
+    MatCheckboxModule,
   MatCheckboxModule,
   MatButtonModule,
   MatInputModule,
@@ -63,16 +71,44 @@ const materialList = [
   MatSnackBarModule,
   MatTableModule,
   MatSortModule,
-  MatPaginatorModule
-]
-
-@NgModule({
-  declarations: [],
-  imports: [
-    materialList
+  MatPaginatorModule,
+  FlexLayoutModule,
+  ReactiveFormsModule
   ],
   exports: [
-    materialList
+    MatCheckboxModule,
+  MatCheckboxModule,
+  MatButtonModule,
+  MatInputModule,
+  MatAutocompleteModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatMenuModule,
+  MatSidenavModule,
+  MatToolbarModule,
+  MatListModule,
+  MatGridListModule,
+  MatCardModule,
+  MatStepperModule,
+  MatTabsModule,
+  MatExpansionModule,
+  MatButtonToggleModule,
+  MatChipsModule,
+  MatIconModule,
+  MatProgressSpinnerModule,
+  MatProgressBarModule,
+  MatDialogModule,
+  MatTooltipModule,
+  MatSnackBarModule,
+  MatTableModule,
+  MatSortModule,
+  MatPaginatorModule,
+  FlexLayoutModule,
+  ReactiveFormsModule
   ]
 })
 export class MaterialModule { }

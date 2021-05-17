@@ -2,3 +2,45 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+.head1 {
+  font: normal normal 300 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  font-size: 28px;
+}
+
+.head2 {
+  font: normal normal bold 16px/19px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.topGap {
+  top: 174px;
+  left: 462px;
+  width: 100px;
+  height: 34px;
+}
+
+
+.buttonNext {
+  bottom: 30px;
+  position: fixed;
+
+  button {
+    width: 165px;
+    height: 54px;
+    background: #03A9B8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #fff;
+  }
+
+}
