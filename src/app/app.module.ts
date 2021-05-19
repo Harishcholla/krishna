@@ -7,12 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 import { MaterialModule } from './material/material.module';
 import { SecondpageComponent } from './secondpage/secondpage.component';
+import { FifthPageComponent } from './fifth-page/fifth-page.component';
+import { CommonPagesComponent } from './common-pages/common-pages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstpageComponent,
-    SecondpageComponent
+    SecondpageComponent,
+    FifthPageComponent,
+    CommonPagesComponent
   ],
   imports: [
     BrowserModule,
